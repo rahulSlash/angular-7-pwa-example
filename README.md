@@ -1,27 +1,14 @@
 # Pwademo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7. This is an example application for how to convert your application into a progressive web application.
 
-## Development server
+## Steps
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Run `ng build --prod` for a production build. The build artifacts will be stored in the `dist/` directory.
+2. Run `npm i -g http-server` to install a http server client globally.
+3. Navigate to `dist/pwa` and run `http-server -o` to run the application.
+4. Refresh the browser after the application loads up to register the service worker and cache all assets and data.
+5. Disconnect from the network and refresh the application.
 
-## Code scaffolding
+You would see the application loads up from the cache.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
